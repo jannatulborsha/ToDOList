@@ -13,6 +13,19 @@ void add()
     fin << task << endl;
     fin.close();
 }
+
+void show()
+{
+    ifstream fin;
+    string str;
+    fin.open("task.txt");
+    while(getline(fin,str))
+    {
+        cout << str << endl;
+    }
+    fin.close();
+
+}
 int main()
 {
     int option;
@@ -24,5 +37,7 @@ int main()
         cin.ignore();
         if(option == 1)
             add();
+        else if(option == 2)
+            show();
     }
 }
