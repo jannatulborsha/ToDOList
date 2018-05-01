@@ -6,6 +6,7 @@ using namespace std;
 void add()
 {
     ofstream fin;
+    ///open a file
     fin.open("task.txt",ios_base::app);
     string task;
     cout << "Enter a task: (name & description: date:): ";
